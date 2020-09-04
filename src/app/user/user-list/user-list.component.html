@@ -1,0 +1,23 @@
+<div class="table-responsive">
+    <a routerLink="/landing">Home</a>
+    <a routerLink="/users">Register New User</a>
+    <table class="table table mb-0">
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>
+                    <a class="btn" (click)="userDetails(user.id)">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                </td>
+                <td>
+                    <a class="btn" (click)="deleteUser(user.id)">
+                        <i class="fa fa-trash-o"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

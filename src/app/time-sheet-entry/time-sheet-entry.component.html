@@ -1,0 +1,52 @@
+<div class="table-responsive">
+    <form #timesheetForm = "ngForm">
+
+        <table class="table mb-0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project Name</td>
+                    <td>
+                        <input class="form-control" id="sunday" name="sunday" [(ngModel)]="currentTimesheet.sunday" />
+                    </td>
+                    <td>
+                        <input class="form-control" id="monday" name="monday" [(ngModel)]="currentTimesheet.monday" />
+                    </td>
+                    <td>
+                        <input class="form-control" id="tuesday" name="tuesday" type="number" [(ngModel)]="currentTimesheet.tuesday" />
+                    </td>
+                    <td>
+                        <input class="form-control" id="wednesday" name="wednesday" type="number" [(ngModel)]="currentTimesheet.wednesday" />
+                    </td>
+                    <td>
+                        <input class="form-control" id="thursday" name="thursday" type="number" [(ngModel)]="currentTimesheet.thursday" />
+                    </td>
+                    <td>
+                        <input class="form-control" id="friday" name="friday" type="number" [(ngModel)]="currentTimesheet.friday" />
+                    </td>
+                    <td>
+                        <input class="form-control" id="saturday" name="saturday" type="number" [(ngModel)]="currentTimesheet.saturday" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-outline-primary btn-sm" type="submit" (click)="submitTimesheet(timesheetForm)">Submit
+                            Time
+                            Sheet</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>

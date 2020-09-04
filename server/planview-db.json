@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "firstName": "Admin",
+      "lastName": "Admin",
+      "dob": "2020-01-01",
+      "email": "admin@admin.com",
+      "addressLine1": "my street",
+      "addressLine2": "add colony",
+      "city": "city",
+      "state": "state",
+      "country": "country",
+      "zipcode": 1,
+      "userName": "admin",
+      "isAdmin": true,
+      "password": "admin",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Pankaj",
+      "lastName": "B",
+      "dob": "2020-09-04",
+      "emailId": "",
+      "addressLine1": "d2sdfasdf",
+      "addressLine2": "asdfasdf",
+      "city": "asdfasd",
+      "state": "asdfas",
+      "country": "asdf",
+      "zipcode": 23423423,
+      "userName": "pankaj",
+      "isAdmin": true,
+      "password": "pankaj"
+    }
+  ],
+  "timesheet": [
+    {
+      "id": 1,
+      "userId": 1,
+      "sunday": "1",
+      "monday": "2",
+      "tuesday": 3,
+      "wednesday": 4,
+      "thursday": 5,
+      "friday": 6,
+      "saturday": 7
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "sunday": "5",
+      "monday": "6",
+      "tuesday": 7,
+      "wednesday": 1,
+      "thursday": 1,
+      "friday": 3,
+      "saturday": 5
+    }
+  ]
+}

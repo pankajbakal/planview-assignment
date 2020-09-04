@@ -1,0 +1,121 @@
+<form #userForm = "ngForm">
+
+    <div class="form-group row">
+        <label class="col-md-2 col-form-label" for="firstName">First Name</label>
+        <div class="col-md-8">
+            <input class="form-control" id="firstName" name="firstName" type="text" placeholder="First Name Is (required)"
+                [(ngModel)]="newUser.firstName"/>
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="lastName">Last Name</label>
+        <div class="col-md-8">
+            <input class="form-control" id="lastName" name="lastName" type="text" placeholder="Last Name Is (required)"
+                [(ngModel)]="newUser.lastName" />
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="dateOfBirth">Date Of Birth</label>
+        <div class="col-md-8">
+            <input class="form-control" id="dateOfBirth" name="dateOfBirth" type="date" placeholder="DateOfBirth"
+                [(ngModel)]="newUser.dob" />
+            
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="email">Email</label>
+        <div class="col-md-8">
+            <input class="form-control" id="email" name="email" type="email" placeholder="Email (required)" [(ngModel)]="newUser.emailId" />
+            
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="addressLine1">AddressLine1</label>
+        <div class="col-md-8">
+            <input class="form-control" id="addressLine1" name="addressLine1" type="text" placeholder="addressLine1"
+                [(ngModel)]="newUser.addressLine1" />
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="addressLine2">AddressLine2</label>
+        <div class="col-md-8">
+            <input class="form-control" id="addressLine2" name="addressLine2"  type="text" placeholder="addressLine2"
+                [(ngModel)]="newUser.addressLine2" />
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="city">City</label>
+        <div class="col-md-8">
+            <input class="form-control" id="city" name="city" type="text" placeholder="city" [(ngModel)]="newUser.city" />
+            
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="state">State</label>
+        <div class="col-md-8">
+            <input class="form-control" id="state" name="state" type="text" placeholder="state" [(ngModel)]="newUser.state" />
+            
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="country">Country</label>
+        <div class="col-md-8">
+            <input class="form-control" id="country" name="country" type="text" placeholder="country" [(ngModel)]="newUser.country" />
+            
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="zipcode">Zipcode</label>
+        <div class="col-md-8">
+            <input class="form-control" id="Zipcode" name="Zipcode" type="number" placeholder="zipcode" [(ngModel)]="newUser.zipcode" />
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="userName">Username</label>
+        <div class="col-md-8">
+            <input class="form-control" id="userName" name="userName" type="text" placeholder="User Name is (required)"
+                [(ngModel)]="newUser.userName" />
+            
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label class="col-md-2 col-form-label" for="admin">Admin</label>
+        <div class="col-md-8">
+            <input class="form-control" id="admin" name="admin" type="checkbox" checked=false placeholder="admin"
+                [(ngModel)]="newUser.isAdmin" />
+        </div>
+    </div>
+
+    <div>
+        <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label" for="password">Password</label>
+            <div class="col-md-8">
+                <input class="form-control" id="password" name="password" type="password" placeholder="Password is (required)"
+                    [(ngModel)]="newUser.password" />
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <div class="offset-md-2 col-md-4">
+            <button class="btn btn-primary mr-3" type="button" (click)="save(userForm)" >
+                Update
+            </button>
+            <button class="btn btn-primary mr-3" type="button" (click)="back()" >
+                Back
+            </button>
+        </div>
+    </div>
+</form>
